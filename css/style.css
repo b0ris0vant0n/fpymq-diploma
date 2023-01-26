@@ -389,15 +389,21 @@ img.new-post-image {
     color: #b59f5b;
 }
 
+.find-form {
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+
 .to-find {
+    position: relative;
     padding-top: 58px;
-    padding-bottom: 58px;
     display: flex;
     height: 49px;
 }
 
 .find-button {
     background-image: url(../svg/search.svg);
+    position: relative;
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center;
@@ -412,7 +418,7 @@ img.new-post-image {
 }
 
 .field {
-    box-sizing: border-box;
+    height: 49px;
     padding: 0 0 0px 18px;
     display: inline-block;
     outline-style: none;
@@ -430,9 +436,9 @@ img.new-post-image {
 .subscription {
     margin-top: -20px;
     display: block;
-    padding-top: 24px;
+    padding-top: 18px;
     height: 49px;
-    padding-bottom: 128px;
+    padding-bottom: 122px;
 }
 
 .field-email {
@@ -482,7 +488,7 @@ img.new-post-image {
 .tag-name {
     padding: 4px 13px 6px 11px;
     border: #eeeeee 3px solid;
-    margin: 1px 2px 5px 4px ;
+    margin: 3px 2px 5px 6px ;
 }
 
 .tag-name:hover {
