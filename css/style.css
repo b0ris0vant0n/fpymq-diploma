@@ -472,7 +472,7 @@
 
     .topics {
         padding-top: 13px;
-        width: 42vh;
+        width: 93%;
     }
 
     .topic {
@@ -640,6 +640,17 @@
         align-self: flex-end;
         padding-left: 5px;
         padding-top: 2px;
+    }
+
+    .popup {
+        display: block;
+        width: 90%;
+        height: 590px;
+        background-color: #ffffff;
+        position:fixed;
+        top: 60px;
+        left: 5%;
+        z-index: 3;
     }
 
 }
@@ -1300,6 +1311,17 @@
         padding-left: 5px;
 
     }
+
+    .popup {
+        display: block;
+        width: 390px;
+        height: 590px;
+        background-color: #ffffff;
+        position:fixed;
+        top: 23%;
+        left: 26%;
+        z-index: 3;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1947,6 +1969,17 @@ body {
         padding-left: 5px;
 
     }
+
+    .popup {
+        display: block;
+        width: 390px;
+        height: 590px;
+        background-color: #ffffff;
+        position:fixed;
+        top: 20%;
+        left: 40%;
+        z-index: 3;
+    }
 }
 
 .title {
@@ -2011,4 +2044,174 @@ body {
     color: #b59f5b;
 }
 
+.popup-title {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 55px;
+}
 
+.popup-title:after {
+    padding-top: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 66px;
+    content: '';
+    border-bottom: #b59f5b solid 3px;
+}
+
+.form-frequent {
+    padding-top: 20px;
+    display: block;
+    padding-left: 30px;
+    margin: auto;
+    font-size: 13px;
+}
+
+.form-hint {
+    padding-bottom: 10px;
+    font: inherit;
+    font-size: 13px;
+    line-height: 16px;
+    width: 96%;
+}
+
+.form-frequent select {
+    box-sizing: border-box;
+    width: 92%;
+    height: 47px;
+    background-color: #f4f7f6;
+    outline-style: none;
+    border: none;
+    marker: none;
+    font: inherit;
+    font-size: 13px;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+    padding-left: 15px;
+}
+
+.form-subscription {
+    padding-top: 20px;
+    display: block;
+    padding-left: 30px;
+    margin: auto;
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+
+.radio-group {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.radio-group:nth-of-type(n+3) {
+    margin-left: 15px;
+}
+
+.radio-group-text:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center center;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.radio {
+    position: absolute;
+    opacity: 0;
+}
+.radio:checked~ .radio-group-text:before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin: auto;
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+
+.form-content-input {
+    font: inherit;
+    font-size: 13px;
+    width: 92%;
+    min-height: 130px;
+    background-color: #f4f7f6;
+    outline-style: none;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.send-button {
+    margin-top: 17px;
+    outline-style: none;
+    border: none;
+    width: 85%;
+    height: 49px;
+    background-color: #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.send-button:hover {
+    background-color: #000000;
+}
+
+.popup:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: -34px;
+    left: 92%;
+    background-image: url("../svg/form-x.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+
+._hidden {
+    visibility: hidden;
+}
+
+._hidden:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 4;
+}
+
+.popup {
+    z-index: 5;
+}
