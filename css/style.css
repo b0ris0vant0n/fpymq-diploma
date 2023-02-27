@@ -116,24 +116,6 @@
     .title {
         height: 96px;
     }
-    @media only screen and (orientation: portrait) {        
-        .trends-container {
-            display:block;
-            position: relative;
-            margin: 0 auto;
-            width: 100%;
-        }
-     }
-
-     @media only screen and (orientation: landscape)  {        
-        .trends-container {
-            display: flex;
-            position: relative;
-            margin: 0 auto;
-            width: 100%;
-            flex-wrap: wrap;
-        }
-     }
 
     .trend {
         display: flex;
@@ -2245,3 +2227,67 @@
 .popup {
     z-index: 5;
 }
+
+
+@media (max-width: 640px) and (orientation: portrait) {        
+    .trends-container {
+        display:block;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 640px) and (orientation: landscape)  {        
+    .trends-container {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        display: flex;
+        position: relative;
+        width: 49.6%;
+        height: 245px;
+        align-items: flex-end;
+        overflow: hidden;
+        margin: inherit;
+    }
+ }
+
+ @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .trends-container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .trend {
+        display: flex;
+        width: 24.8%;
+        align-items: flex-end;
+        overflow: hidden;
+        margin: 0 1px 0 0;
+    }
+
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 0 0 0;
+        margin: 0 0 10px 0;
+    }
+    .trend:first-child h3 {
+        padding-right: 0px;
+    }
+
+    .posts-container {
+        justify-content: center;
+    }
+
+ }
