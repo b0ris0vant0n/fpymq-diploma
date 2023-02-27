@@ -2268,6 +2268,10 @@
         overflow: hidden;
     }
 
+    .trend img {
+        width: auto;
+    }
+
     .trend {
         display: flex;
         width: 24.8%;
@@ -2284,6 +2288,15 @@
     }
     .trend:first-child h3 {
         padding-right: 0px;
+    }
+
+    .trend-container {
+        font-size: 1em;
+        padding-left: 5px;
+    }
+
+    .trends-name {
+        font-size: 1em;
     }
 
     .posts-container {
